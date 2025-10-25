@@ -3,20 +3,22 @@
     /* App Colors */
     --color-primary: var(--color-black);
     --color-primary-variant: var(--color-gray);
-    --color-accent: var(--color-blue);
+    --color-accent: var(--color-teal);
     --color-accet-variant: var(--color-orange);
     --color-text: var(--color-white);
 
     /* Colors */
---color-white: #ffffff;
---color-black: #050a13;
---color-blue: #03e8f9;
---color-orange: #fd6413;
---color-gray: #1b1e26;
---color-teal: #004D40;
---color-transparent: rgba(5, 10, 19, 0.8);
+    --color-white: #ffffff;
+    --color-black: #050a13;
+    --color-blue: #009688;
+    --color-orange: #fd6413;
+    --color-gray: #1b1e26;
+    --color-teal: #004D40;
+    --color-transparent: rgba(5, 10, 19, 0.8);
+    
+/* Size */
+  --size-max-width: 1200px;
 }
-
 * {
     box-sizing: border-box;
 }
@@ -25,7 +27,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
-h1,h2,h3,p,ul {
+
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
 }
 
@@ -48,6 +55,7 @@ button {
 button:focus {
     outline: 1px solid var(--color-accent);
 }
+
 /* Header */
 .header {
     background-color: var(--color-transparent);
@@ -77,8 +85,7 @@ button:focus {
     gap: 4px;
 }
 .header__menu__item {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 8px 16px;
 }
 
 .header__menu__item:hover {
@@ -87,5 +94,50 @@ button:focus {
 
 .header__menu__item.active {
     border: 1px solid var(--color-accent);
+    border-radius: 4px;
 
+}
+/* Home */
+#home {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 5rem 1rem;
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.home__img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 3px solid var(--color-accent);
+}
+
+.home__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home__title--strong {
+    color: var(--color-accent);
+}
+.home__description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.home__contact {
+    display: inline-block;
+    background-color: var(--color-accent);
+    padding: 0.5rem 1rem;
+    margin: 2rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.home__contact:hover {
+    background-color: transparent;
+    color: var(--color-accent);
+    outline: 2px solid var(--color-accent);
 }

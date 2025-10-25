@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO -->
-    <title>Yujoo&#39;s Portfolio</title>
-    <meta name="description" content="Yujoo&#39;s Portfolio"/>
-    <meta name="author" content="Yujoo"/>
-    <link rel="shortcut icon" href="images/favicon_Portfoilio_circle.ico" type="image/x-icon"/>
-    <!-- OG -->
-     <meta property="og:title" content="Yujoo&#39;s Portfolio"/>
-     <meta property="og:type" content="website"/>
-     <meta property="og:url" content="배포후 생성된 URL"/>
-     <meta property="og:image" content="배포후 생성된 URL"/>
-     <meta property="og:description" content="배포후에 생성된 이미지"/>
-     <!-- font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<!-- font awesome -->
-<script src="https://kit.fontawesome.com/7bd436ee57.js" crossorigin="anonymous"></script>
-<!-- css -->
-<link rel="stylesheet" href="css/style.css"/>
-<!-- javascript -->
-<script src="scr/main.js" defer></script>
-</head>
-<body>
-    <!-- Header -->
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <title>Yujoo&#39;s Portfolio</title>
+  <meta
+     name="description" 
+     content="Yujoo&#39;s Portfolio"/>
+  <meta
+     name="author" 
+     content="Yujoo"/>
+  <link rel="shortcut icon" href="images/favicon_Portfoilio_circle.ico" type="image/x-icon"/>
+  <!-- OG -->
+   <meta property="og:title" content="Yujoo&#39;s Portfolio"/>
+   <meta property="og:type" content="website"/>
+   <meta property="og:url" content="배포후 생성된 URL"/>
+   <meta property="og:image" content="배포후 생성된 URL"/> 
+   <meta property="og:description" content="배포후에 생성된 이미지"/>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link 
+     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+     rel="stylesheet"/>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/7bd436ee57.js" crossorigin="anonymous"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- javascript -->
+  <script src="scr/main.js" defer></script>
+ </head>
+    <body>
+     <!-- Header -->
      <header class="header">
         <div class="header__logo">
-            <img class="header__logo__img" src="images/favicon_Portfoilio_circle.ico" alt="logo"/>
-            <h1><a href="#">Yujoo</a></h1>
+         <img class="header__logo__img" src="images/favicon_Portfoilio_circle.ico" alt="logo"/>
+         <h1 class="header__logo__title"><a href="#">Yujoo</a>
+         </h1>
         </div>
-        <nav>
-            <ul class="header__menu">
-                <li><a class="header__menu__item active" href="#home">Home</a></li>
-                <li><a class="header__menu__item" href="#aboutMe">About Me</a></li>
-                <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#projects">Projects</a></li>
-                <li><a class="header__menu__item" href="#contact">Contact</a></li>
-            </ul>
+        <nav class="header__nav">
+         <ul class="header__menu">
+             <li><a class="header__menu__item active" href="#home">Home</a></li>
+             <li><a class="header__menu__item" href="#aboutMe">About Me</a></li>
+             <li><a class="header__menu__item" href="#skills">Skills</a></li>
+             <li><a class="header__menu__item" href="#projects">Projects</a></li>
+             <li><a class="header__menu__item" href="#contact">Contact</a></li>
+         </ul>
         </nav>
-    </header>
+    </header>   
     <!-- Main -->
-    <main>
+    <main>  
         <!-- Home -->
-        <section id="home"></section>
-        <img src="images/profile.png" alt="Profile"/>
-        <h2> Hello it&#39;s me, Yujoo Glarner&#45;Go </h2>
-        <p> From Space to Screen: A Multi-Skilled Problem Solver </p>
-        <a href="#aboutMe" class="btn">Contact Me </a>
+        <section id="home">
+            <img class="home__img" src="images/profile.png" alt="Profile"/>
+            <h2 class="home__title"> Hello,<br>
+                it's Yujoo </h2>
+            <p class="home__description"> <strong class="home__title--strong">From Space to Screen:</strong>  
+                A Multi-Skilled Problem Solver 
+            </p>
+            <a class="home__contact" href="#aboutMe" class="btn">Contact Me 
+            </a>
+        </section>
         <!-- About Me -->
+        <section id="aboutMe">
         <h2>About Me</h2>
         <p> My diverse background in Interior Architecture (Grad. 2013) and Project Management (3.5 years) has refined 
             my skills in user-centric problem solving, clear communication, and strategic project execution. 
@@ -85,12 +98,13 @@
                 <p>Data Analyst Intern</p>
                 <p>June 2022 - August 2022</p>
             </li>
-        <section id="aboutMe"></section>
+        </section>
         <!-- Skills -->
-        <section id="skills"></section>
-        <h2> My Skills </h2>
-        <p> I am proficient in HTML, CSS, and JavaScript. </p>
-        <div>
+        <section id="skills">
+            <h2> My Skills </h2>
+            <p> I am proficient in HTML, CSS, and JavaScript. </p>
+            <div>
+            </div>
             <section>
                 <h3>Coding Skills</h3>
                 <ul>
@@ -125,9 +139,9 @@
                 <li><p>Collaboration</p></li>
                 <li><p>Time Management</p></li>
             </section>
-        </div>
+        </section>
         <!-- Projects -->
-        <section id="projects"></section>
+        <section id="projects">
         <h2> Projects </h2>
         <p> Here are some of my previous works. </p>
         <ul>
@@ -136,8 +150,9 @@
             <li><button>Interior</button></li>
             <li><button>Youtube</button></li>
         </ul>
+        </section>
     </main>
     <!-- Footer -->
     <footer id="contact"> </footer>
-</body>
+    </body>
 </html>
