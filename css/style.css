@@ -36,9 +36,9 @@ p {
     padding: 0.5rem 3rem;
 }
 
-ul {
+ul, ol, li{
     list-style: none;
-    padding: 0 3rem;
+    padding: 0 2rem;
 }
 
 a {
@@ -55,9 +55,10 @@ button {
 button:focus {
     outline: 1px solid var(--color-accent);
 }
+
 /* Common Section Styles */
 .section {
-    padding; 4rem;
+    padding: 4rem;
     text-align: center;
 }
 
@@ -65,16 +66,22 @@ button:focus {
     max-width: var(--size-max-width);
     margin: auto;
 }
+
 .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 1rem 0;
 }
-.description {
-    font-size: 1.5rem;
-    margin: 2rem 0;
-    font-display: center;
-    padding: 5rem 0;
+
+.subtitle {
+    font-size: 2rem; 
+    margin: 0;
 }
+
+.description {
+    font-size: 1rem; 
+    margin: 2rem 0;
+}
+
 /* Header */
 .header {
     background-color: var(--color-transparent);
@@ -92,17 +99,21 @@ button:focus {
     align-items: center;
     gap: 8px;
 }
+
 .header__logo__img {
     width: 36px;
     height: 36px;
 }
+
 .header__logo__title {
     font-size: 1.8rem;
 }
+
 .header__menu {
     display: flex;
     gap: 4px;
 }
+
 .header__menu__item {
     padding: 8px 16px;
 }
@@ -116,6 +127,7 @@ button:focus {
     border-radius: 4px;
 
 }
+
 /* Home */
 #home {
     background-color: var(--color-primary);
@@ -139,6 +151,7 @@ button:focus {
 }
 
 .home__title--strong {
+    font-size: 2rem;
     color: var(--color-accent);
 }
 .home__description {
@@ -216,6 +229,45 @@ button:focus {
 }
 
 .job__period {
-    color: var(--color-accent-variant);
-    font-size: 0.8rem;
+    color: var(--color-accent);
+    font-size: 0.9rem;
 }
+
+/* Skills */
+#skills {
+    background-color: var(--color-primary-variant);
+    color: var(--color-text);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    margin: 2rem 3rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.skills__title {
+    color: var(--color-accent);
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    text-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
+}
+
+.skills__coding {
+    grid-row: span 2;
+    padding: 1rem;
+    background-color: var(--color-primary);
+}
+
+.skills__tools {
+    padding: 1rem;
+    background-color: var(--color-gray); 
+}
+
+.skills__Personality {
+    padding: 1rem;
+    background-color: var(--color-primary-variant);
+    filter: brightness(150%);
+}  
