@@ -432,18 +432,51 @@ button:focus {
     width: 150px;
     height: 150px;
     border-radius: 100%;
-   box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
 }
 
 .testimonial__bubble {
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
-
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
 }
 
 .testimonial__bubble__name {
     color: var(--color-accent-variant);
     font-weight: bold;
     filter: brightness(70%);
+}
+
+/* Arrow up */
+.arrow-up {
+    background-color: var(--color-accent-variant);
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 0px 0px var(--color-transparent);
+}
+
+/*Footer*/
+#contact {
+    background-color: var(--color-primary);
+    color: var(--color-text)
+}
+
+.contact__links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.contact__link:hover {
+    color: var(--color-accent);
+    transform: scale(1.2);
+    transition: all 250ms ease-in;
 }
