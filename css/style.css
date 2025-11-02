@@ -32,24 +32,29 @@ h1,
 h2,
 h3,
 p {
-    margin: 0;
-    padding: 0.5rem 3rem;
+    margin: 1rem;
+    padding: 0;
 }
 
 ul, ol, li{
     list-style: none;
     padding: 0;
+    margin: 0.5rem;
 }
 
 a {
     text-decoration: none;
     color: var(--color-text);
+    margin: 0;
+    padding: 0;
 }
 
 button {
-    background-color; transparent;
+    background-color: transparent;
     outline: 0;
     border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 button:focus {
@@ -58,7 +63,7 @@ button:focus {
 
 /* Common Section Styles */
 .section {
-    padding: 4rem;
+    padding: 2.5rem;
     text-align: center;
 }
 
@@ -69,7 +74,7 @@ button:focus {
 
 .title {
     font-size: 3rem;
-    margin: 1rem 0;
+    margin: 0;
 }
 
 .subtitle {
@@ -79,7 +84,7 @@ button:focus {
 
 .description {
     font-size: 1rem; 
-    margin: 2rem 0;
+    margin: 2rem 1rem;
 }
 
 /* Header */
