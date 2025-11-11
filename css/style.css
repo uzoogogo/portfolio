@@ -465,7 +465,9 @@ button:focus {
     height: 3.5rem;
     border-radius: 100%;
     text-align: center;
-    box-shadow: 5px 5px 0px 0px var(--color-transparent);
+  box-shadow: 1px 7px 54px 7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 7px 54px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 7px 54px 7px rgba(0,0,0,0.75);
 }
 
 /*Footer*/
@@ -506,7 +508,6 @@ button:focus {
     flex-direction: column;
     align-items: start;
 }
-
 .header__menu {
     flex-direction: column;
     text-align: center;
